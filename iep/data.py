@@ -53,8 +53,8 @@ class ClevrDataset(Dataset):
     self.all_questions = _dataset_to_tensor(question_h5['questions'], mask)
     self.all_image_idxs = _dataset_to_tensor(question_h5['image_idxs'], mask)
     self.all_programs = None
-    if 'programs' in question_h5:
-      self.all_programs = _dataset_to_tensor(question_h5['programs'], mask)
+    # if 'programs' in question_h5:
+      # self.all_programs = _dataset_to_tensor(question_h5['programs'], mask)
     self.all_answers = _dataset_to_tensor(question_h5['answers'], mask)
 
   def __getitem__(self, index):
