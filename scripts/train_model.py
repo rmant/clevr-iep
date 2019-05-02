@@ -5,8 +5,9 @@
 #
 # This source code is licensed under the license found in the
 # LICENSE file in the root directory of this source tree.
-sys.path.insert(0, os.path.abspath('./clevr-iep'))
+
 import sys
+sys.path.insert(0, os.path.abspath('./clevr-iep'))
 import os
 
 import argparse
