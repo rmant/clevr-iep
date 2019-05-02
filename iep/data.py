@@ -62,8 +62,8 @@ class ClevrDataset(Dataset):
     image_idx = self.all_image_idxs[index]
     answer = self.all_answers[index]
     program_seq = None
-    if self.all_programs is not None:
-      program_seq = self.all_programs[index]
+    # if self.all_programs is not None:
+      # program_seq = self.all_programs[index]
 
     image = None
     if self.image_h5 is not None:
